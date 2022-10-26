@@ -1,4 +1,4 @@
-package edu.is.escuelaing.arep.api.model;
+package edu.escuelaing.edu.co.arep.model;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -47,5 +47,6 @@ public class Palindromo {
 
 
 }
+
 
 
