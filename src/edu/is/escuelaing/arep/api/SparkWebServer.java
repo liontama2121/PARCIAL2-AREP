@@ -4,7 +4,8 @@ public class SparkWebServer {
 
     public static void main(String... args){
         port(getPort());
-        get("hello", (req,res) -> "Hello Docker!");
+        // root is 'src/main/resources', so put files in 'src/main/resources/public'
+        staticFiles.location("/"); // Static files
     }
 
     private static int getPort() {
