@@ -38,14 +38,21 @@ public class Palindromo {
         return  esPalindroma;
     }
 
+    public String getPalabra() {
+        return palabra;
+    }
 
+    public boolean isEsPalindroma() {
+        return esPalindroma;
+    }
 
+    public void setPalabra(String palabra) {
+        this.palabra = palabra;
+    }
 
-
-
-
-
-
+    public void setEsPalindroma(boolean esPalindroma) {
+        this.esPalindroma = esPalindroma;
+    }
 }
 
 
