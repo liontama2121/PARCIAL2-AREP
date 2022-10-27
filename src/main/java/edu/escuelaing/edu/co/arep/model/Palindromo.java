@@ -19,7 +19,7 @@ public class Palindromo {
         return new StringBuilder(str).reverse().toString();
     }
 
-    public String palabraAlcontrario ()
+    public String palabraAlcontrario (String palabra)
 
     {
         String contrario;
@@ -28,13 +28,9 @@ public class Palindromo {
 
     }
     public boolean esUnPalindromo(String palabra){
-        if(palabraAlcontrario()==palabra){
-            esPalindroma=true;
-
-        }
-        else
-            esPalindroma=false;
-
+        
+        String comparacion = palabraAlcontrario(palabra);
+        esPalindroma = comparacion.equals(palabra);
         return  esPalindroma;
     }
 
