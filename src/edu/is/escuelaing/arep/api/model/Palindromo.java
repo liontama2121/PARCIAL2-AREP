@@ -28,14 +28,10 @@ public class Palindromo {
 
     }
     public boolean esUnPalindromo(String palabra){
-        if(palabraAlcontrario()==palabra){
-            esPalindroma=true;
-
-        }
-        else
-            esPalindroma=false;
-
+        String comparacion = palabraAlcontrario(palabra);
+        esPalindroma = comparacion.equals(palabra);
         return  esPalindroma;
+        
     }
 
 
